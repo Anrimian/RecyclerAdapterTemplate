@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="RecyclerViewAdapter"
+    description="Creates the skeleton of a RecyclerView adapter.">
+
+    <category value="Adapter" />
+
+    <parameter
+        id="NAME"
+        name="Model Name"
+        type="string"
+        constraints="nonempty"
+        help="Enter model name." />
+		
+	<parameter
+        id="LAYOUT_RES_ID"
+        name="Layout resource id"
+        type="layout"
+        constraints="nonempty"
+        help="Enter layout resource id." />
+		
+	<globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
